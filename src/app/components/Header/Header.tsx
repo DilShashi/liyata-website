@@ -4,6 +4,8 @@ import Logo from './Logo'; // Import Logo component
 import Profile from './Profile_icon'; // Import Profile component
 import Cart from './Cart_icon';
 import Whatsapp from './Whatsapp_icon';
+import Search_bar from './Search_bar';
+import Dropdown_list from './Dropdown_list';
 
 function Header() {
   return (
@@ -17,6 +19,12 @@ function Header() {
       <div className="absolute" style={{ top: '42px', left: '112px' }}>
         <Logo />
       </div>
+
+      {/* Search bar positioned on the background */}
+      <Search_bar />
+           
+      {/* Dropdown list positioned on the background */}
+      <Dropdown_list />
 
       {/* Profile icon positioned on the background */}
       <div className="absolute" style={{ top: '77px', left: '1258px' }}>

@@ -2,3 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .container video {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .text-box {
+    position: absolute;
+    top: 186px;
+    left: 0;
+    width: 1440px;
+    height: 1170px;
+    background: linear-gradient(to bottom, #000000 21%, #121922 35%, #19232F 47%, #233243 56%, #394756 100%);
+    color: transparent; /* Transparent text fill */
+    font-size: 350px;
+    font-weight: 800; /* ExtraBold */
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 2; /* Text box should be above the video */
+    text-shadow: 
+      inset 0 1px 2px rgba(0,0,0,0.8), 
+      inset 0 -1px 1px rgba(255,255,255,0.2),
+      inset 1px 0 3px rgba(0,0,0,0.5);
+  }
+  
+  .text-box h1 {
+    margin-left: 1em; /* Add space between text and left side */
+  }
+  
+  .fade {
+    animation: fadeOut 0.7s ease-in-out;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

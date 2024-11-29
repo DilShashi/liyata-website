@@ -31,15 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${roboto.variable} ${geistSans.variable} antialiased`}
-      >
-        {/* Background component placed in the layout to be behind all content */}
-        <div className="absolute top-0 left-0 w-full h-full -z-10">
-          <Bg_home />
-        </div>
-
-        {/* Header component */}
-        <Header />
-        
+      >        
         {/* Main content area */}
         <div className="max-w-[1440px] w-full mx-auto">
           {children}

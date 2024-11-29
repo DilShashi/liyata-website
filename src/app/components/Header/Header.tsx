@@ -7,7 +7,7 @@ import Whatsapp from './Whatsapp_icon';
 
 function Header() {
   return (
-    <div className="relative w-full h-[160px]">
+    <div className="w-full h-[160px]">
       {/* Header Background */}
       <div className="absolute top-0 left-0 w-full h-full -z-10">
         <Background />

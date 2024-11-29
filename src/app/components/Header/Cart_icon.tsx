@@ -4,7 +4,7 @@ import Link from 'next/link';
 function Cart() {
   return (
     <div>
-      <Link href="./Cart">
+      <Link href="/cart">
         {/* Cart icon with drop shadow */}
         <img
           src="/cart.png"

@@ -4,7 +4,11 @@ import Link from 'next/link';
 function Whatsapp() {
   return (
     <div>
-      <Link href="/Profile">
+      <Link 
+        href="https://wa.me/94779686160" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        >
         {/* Whatsapp icon with drop shadow */}
         <img
           src="/whatsapp.png"

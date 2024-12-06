@@ -3,7 +3,6 @@ import React from 'react';
 import Bg_home from './components/Home/Background'; // Import the background component
 import Slider from './components/Home/Slider'; // Import the slider component
 import Category from './components/Home/[category]/Category'; // Import the Category component
-import Footer from './Footer/Footer';
 
 export default function HomePage() {
   return (

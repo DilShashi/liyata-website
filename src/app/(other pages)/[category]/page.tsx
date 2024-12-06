@@ -1,7 +1,6 @@
 import React from 'react'
-import Header from '../components/Header/Header'
-import Bg_category from '../components/Category/Background'
-import Footer from '../Footer/Footer'
+import Bg_category from './components/Background'
+import Footer from '@/app/components/Footer/Footer'
 
 function page() {
   return (

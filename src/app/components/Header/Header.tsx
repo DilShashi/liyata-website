@@ -1,5 +1,4 @@
 import React from 'react';
-import Background from './Background'; // Import Background component
 import Logo from './Logo'; // Import Logo component
 import Profile from './Profile_icon'; // Import Profile component
 import Cart from './Cart_icon';
@@ -9,11 +8,7 @@ import Dropdown_list from './Dropdown_list';
 
 function Header() {
   return (
-    <div className="w-full h-[160px]">
-      {/* Header Background */}
-      <div className="absolute top-0 left-0 w-full h-full -z-10">
-        <Background />
-      </div>
+    <div className="w-full h-[160px] bg-[#000000] border-t-[1px] border-b-[1px] border-[#121922] mt-[26px]">
 
       {/* Logo positioned on the background */}
       <div className="absolute" style={{ top: '42px', left: '112px' }}>

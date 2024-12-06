@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from './components/Header/Header';
 import Bg_home from "./components/Home/Background";
+import Footer from "./Footer/Footer";
 
 const roboto = Roboto({
   weight: ['100', '300', '400', '500', '700', '900'],
@@ -36,6 +37,8 @@ export default function RootLayout({
         <div className="max-w-[1440px] w-full mx-auto">
           {children}
         </div>
+
+      <Footer />  
       </body>
     </html>
   );

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react';
 import Link from 'next/link'; // Import Next.js Link component
 
@@ -43,11 +45,24 @@ function Information() {
             listStyleType: 'circle', // Rounded bullet points
           }}
         >
-          <li><Link href="/shopping-details">Shopping Details</Link></li>
-          <li><Link href="/terms-and-conditions">Terms and Conditions</Link></li>
-          <li><Link href="/privacy-policy">Privacy Policy</Link></li>
+          <li><Link href="/shopping-details"><span className="category-link">Shopping Details</span></Link></li>
+          <li><Link href="/terms-and-conditions"><span className="category-link">Terms and Conditions</span></Link></li>
+          <li><Link href="/privacy-policy"><span className="category-link">Privacy Policy</span></Link></li>
         </ul>
       </div>
+
+      <style jsx>{`
+        .category-link {
+          color: white;
+          text-decoration: none; /* Remove underline */
+          transition: color 0.3s, text-decoration 0.3s; /* Smooth transition */
+        }
+        
+        .category-link:hover {
+          color: #f39c12; /* Change color on hover (example: yellow) */
+          text-decoration: underline; /* Underline text on hover */
+        }
+      `}</style>
     </div>
   );
 }

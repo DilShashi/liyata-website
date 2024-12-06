@@ -10,8 +10,6 @@ function page() {
       <div className="absolute top-0 left-0 w-full h-full -z-10">
         <Bg_category />
       </div>
-      
-      <Header />
 
       <Footer />
 

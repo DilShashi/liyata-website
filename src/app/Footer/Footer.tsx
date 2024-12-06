@@ -8,8 +8,8 @@ import Icons from './Icons';
 function Footer() {
   return (
     <div>
-      {/* Footer Background */}
-      <div className="absolute top-0 left-0 w-full h-full -z-10">
+      {/* Footer Background */}<div className="absolute top-0 left-0 w-full h-full -z-10">
+      
         <Background />
       </div>
 

@@ -70,6 +70,9 @@ export default function HomePage() {
         SHOP BY CATEGORY
       </div>
       
+      {/* Slider */}
+      <Slider />
+
       {/* Category: Awards & Plaques */}
       <Category
         position={{ top: 1568, left: 112 }}
@@ -149,12 +152,6 @@ export default function HomePage() {
         labelText=" SHOP NOW"
         navigateTo="/[category]" // Add the route for the award category
       />
-
-      {/* Slider */}
-      <Slider />
-
-      {/* Footer */}
-      <Footer />
     </div>
   );
 }

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react';
 import Link from 'next/link'; // Import Next.js Link component
 
@@ -43,11 +45,24 @@ function Liyata() {
             listStyleType: 'circle', // Rounded bullet points
           }}
         >
-          <li><Link href="/about-us">About Us</Link></li>
-          <li><Link href="/contact-us">Contact Us</Link></li>
-          <li><Link href="/privacy-policy">Privacy Policy</Link></li>
+          <li><Link href="/about-us"><span className="category-link">About Us</span></Link></li>
+          <li><Link href="/contact-us"><span className="category-link">Contact Us</span></Link></li>
+          <li><Link href="/privacy-policy"><span className="category-link">Privacy Policy</span></Link></li>
         </ul>
       </div>
+      <style jsx>{`
+        .category-link {
+          color: white;
+          text-decoration: none; /* Remove underline */
+          transition: color 0.3s, text-decoration 0.3s; /* Smooth transition */
+        }
+        
+        .category-link:hover {
+          color: #f39c12; /* Change color on hover (example: yellow) */
+          text-decoration: underline; /* Underline text on hover */
+        }
+      `}</style>
+
     </div>
   );
 }

@@ -1,6 +1,7 @@
-import React from 'react'
-import Bg_category from './components/Background'
-import Footer from '@/app/components/Footer/Footer'
+import React from 'react';
+import Bg_category from './components/Background';
+import Left from './components/Left';
+import Right from './components/Right';
 
 function page() {
   return (
@@ -10,10 +11,12 @@ function page() {
         <Bg_category />
       </div>
 
-      <Footer />
+      <Left />
+
+      <Right />
 
     </div>
-  )
+  );
 }
 
-export default page
+export default page;

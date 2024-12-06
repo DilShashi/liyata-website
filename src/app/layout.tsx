@@ -3,7 +3,6 @@ import { Roboto } from "next/font/google"; // Import Roboto font
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from './components/Header/Header';
-import Bg_home from "./components/Home/Background";
 import Footer from "./components/Footer/Footer";
 
 const roboto = Roboto({

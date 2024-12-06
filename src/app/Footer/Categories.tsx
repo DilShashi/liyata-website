@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react';
 import Link from 'next/link'; // Import Next.js Link component
 
@@ -43,16 +45,29 @@ function Categories() {
             listStyleType: 'circle', // Rounded bullet points
           }}
         >
-          <li><Link href="/awards-plaque">Awards & Plaques</Link></li>
-          <li><Link href="/medals">Medals</Link></li>
-          <li><Link href="/badges">Badges</Link></li>
-          <li><Link href="/key-tags">Key Tags</Link></li>
-          <li><Link href="/name-boards">Name Boards</Link></li>
-          <li><Link href="/ties">Ties</Link></li>
-          <li><Link href="/opening-plaques">Opening Plaques</Link></li>
-          <li><Link href="/officer-sash-waist-belt">Officer Sash Waist Belt</Link></li>
+          <li><Link href="/awards-plaque"><span className="category-link">Awards & Plaques</span></Link></li>
+          <li><Link href="/medals"><span className="category-link">Medals</span></Link></li>
+          <li><Link href="/badges"><span className="category-link">Badges</span></Link></li>
+          <li><Link href="/key-tags"><span className="category-link">Key Tags</span></Link></li>
+          <li><Link href="/name-boards"><span className="category-link">Name Boards</span></Link></li>
+          <li><Link href="/ties"><span className="category-link">Ties</span></Link></li>
+          <li><Link href="/opening-plaques"><span className="category-link">Opening Plaques</span></Link></li>
+          <li><Link href="/officer-sash-waist-belt"><span className="category-link">Officer Sash Waist Belt</span></Link></li>
         </ul>
       </div>
+
+      <style jsx>{`
+        .category-link {
+          color: white;
+          text-decoration: none; /* Remove underline */
+          transition: color 0.3s, text-decoration 0.3s; /* Smooth transition */
+        }
+        
+        .category-link:hover {
+          color: #f39c12; /* Change color on hover (example: yellow) */
+          text-decoration: underline; /* Underline text on hover */
+        }
+      `}</style>
     </div>
   );
 }

@@ -10,7 +10,6 @@ function Logo() {
         alt="Logo"
         width={208}
         height={140}
-        className="object-contain"
       />
     </Link>
   );

@@ -1,7 +1,6 @@
 // File: \liyata-website\src\app\profile\page.tsx
 import React from 'react';
 import Bg_home from './components/Home/Background'; // Import the background component
-import Header from './components/Header/Header';
 import Slider from './components/Home/Slider'; // Import the slider component
 import Category from './components/Home/[category]/Category'; // Import the Category component
 import Footer from './Footer/Footer';
@@ -13,9 +12,6 @@ export default function HomePage() {
       <div className="absolute top-0 left-0 w-full h-full -z-10">
         <Bg_home />
       </div>
-
-      {/* Header */}
-      <Header />
 
       {/* Large "Liyata" header */}
       <div
@@ -73,7 +69,7 @@ export default function HomePage() {
       >
         SHOP BY CATEGORY
       </div>
-
+      
       {/* Category: Awards & Plaques */}
       <Category
         position={{ top: 1568, left: 112 }}

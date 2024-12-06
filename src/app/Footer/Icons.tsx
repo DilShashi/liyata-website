@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react';
 
 function Icons() {
@@ -19,7 +21,10 @@ function Icons() {
           boxShadow: '0 4px 6px rgba(0, 0, 0, 0.2)', // Drop shadow
           filter: 'drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5))', // Inner shadow
           cursor: 'pointer',
+          transition: 'transform 0.3s ease', // Smooth zoom transition
         }}
+        onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.2)')} // Zoom in on hover
+        onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')} // Zoom out when hover ends
       />
 
       {/* WhatsApp Icon */}
@@ -38,7 +43,10 @@ function Icons() {
           boxShadow: '0 4px 6px rgba(0, 0, 0, 0.2)', // Drop shadow
           filter: 'drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5))', // Inner shadow
           cursor: 'pointer',
+          transition: 'transform 0.3s ease', // Smooth zoom transition
         }}
+        onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.2)')} // Zoom in on hover
+        onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')} // Zoom out when hover ends
       />
 
       {/* Email Icon */}
@@ -55,7 +63,10 @@ function Icons() {
           boxShadow: '0 4px 6px rgba(0, 0, 0, 0.2)', // Drop shadow
           filter: 'drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5))', // Inner shadow
           cursor: 'pointer',
+          transition: 'transform 0.3s ease', // Smooth zoom transition
         }}
+        onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.2)')} // Zoom in on hover
+        onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')} // Zoom out when hover ends
       />
     </div>
   );

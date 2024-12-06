@@ -50,6 +50,7 @@ function Dropdown_list() {
 
         {/* Dropdown Icon */}
         <div
+          className="drop-shadow-md object-contain hover:filter hover:brightness-75"
           style={{
             border: 'solid white',
             borderWidth: '0 2px 2px 0',

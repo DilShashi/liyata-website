@@ -29,9 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${roboto.variable} ${geistSans.variable} antialiased`}
-      >        
+      <body className={`${roboto.variable} ${geistSans.variable} antialiased`}> 
+        {/* Header */}
+        <Header />
         {/* Main content area */}
         <div className="max-w-[1440px] w-full mx-auto">
           {children}

@@ -1,121 +1,59 @@
-'use client'
+'use client'; // Mark this component as a client component
 
-import React, { useState } from 'react';
+import React from 'react';
+import { useRouter } from 'next/navigation'; // Import from next/navigation
 
 function Reset() {
-  const [filters, setFilters] = useState<string[]>(["MEDALS", "SPORTS"]); // Example categories
-  const [results, setResults] = useState<number>(100); // Example result count
-
-  const clearAllFilters = () => {
-    setFilters([]);
-    setResults(100); // Reset to default results count
-  };
-
-  const removeFilter = (filter: string) => {
-    setFilters(filters.filter((item) => item !== filter));
-    // Update results count logic here if needed
-  };
+  const router = useRouter();
 
   return (
     <div
       style={{
-        position: "absolute",
-        top: "850px",
-        left: "109px",
-        width: "321px",
-        height: "175px",
-        padding: "10px",
-        boxSizing: "border-box",
+        position: 'absolute',
+        top: '850px',
+        left: '112px',
+        width: '321px',
+        height: '135px',
       }}
     >
-      {/* Refind By */}
+      {/* Flex container for horizontal alignment */}
       <div
         style={{
-          fontFamily: "Roboto",
-          fontSize: "22px",
-          fontWeight: "400",
-          lineHeight: "40px",
-          textAlign: "left",
-          marginBottom: "10px",
+          display: 'flex',
+          justifyContent: 'space-between', // Space between the two labels
+          alignItems: 'center', // Align items vertically in the center
+          fontFamily: 'Roboto, sans-serif',
         }}
       >
-        Refind By
-      </div>
+        {/* Text label 1 */}
+        <div
+          style={{
+            fontSize: '22px',
+            fontWeight: '400', // Regular
+            lineHeight: '40px',
+            color: 'black',
+            textAlign: 'left',
+          }}
+        >
+          Refind By
+        </div>
 
-      {/* Clear All */}
-      <button
-        onClick={clearAllFilters}
-        style={{
-          fontFamily: "Roboto",
-          fontSize: "22px",
-          fontWeight: "700",
-          lineHeight: "40px",
-          textAlign: "right",
-          color: "black",
-          background: "none",
-          border: "none",
-          cursor: "pointer",
-          position: "absolute",
-          top: "10px",
-          right: "10px",
-        }}
-        onMouseOver={(e) => (e.currentTarget.style.color = "blue")}
-        onMouseOut={(e) => (e.currentTarget.style.color = "black")}
-      >
-        Clear All
-      </button>
-
-      {/* Results */}
-      <div
-        style={{
-          fontFamily: "Roboto",
-          fontSize: "22px",
-          fontWeight: "400",
-          lineHeight: "40px",
-          textAlign: "left",
-          marginBottom: "10px",
-        }}
-      >
-        {results} results
-      </div>
-
-      {/* Selected Categories */}
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "5px" }}>
-        {filters.map((filter, index) => (
-          <div
-            key={index}
-            style={{
-              width: "140px",
-              height: "50px",
-              backgroundColor: "#CCE0FF",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              position: "relative",
-              fontFamily: "Roboto",
-              fontSize: "22px",
-              fontWeight: "400",
-              lineHeight: "40px",
-              textAlign: "center",
-            }}
-          >
-            {filter}
-            <button
-              onClick={() => removeFilter(filter)}
-              style={{
-                position: "absolute",
-                top: "5px",
-                right: "5px",
-                background: "none",
-                border: "none",
-                fontSize: "16px",
-                cursor: "pointer",
-              }}
-            >
-              ✖
-            </button>
-          </div>
-        ))}
+        {/* Text label 2 */}
+        <div
+          onClick={() => router.push('/all-categories/all-categories')} // Navigate to "all categories" page
+          style={{
+            fontSize: '22px',
+            fontWeight: '700', // Bold
+            lineHeight: '40px',
+            color: 'black',
+            textAlign: 'right',
+            cursor: 'pointer',
+          }}
+          onMouseOver={(e) => (e.currentTarget.style.color = '#3385FF')} // Change to blue on hover
+          onMouseOut={(e) => (e.currentTarget.style.color = 'black')} // Revert to black
+        >
+          Clear All
+        </div>
       </div>
     </div>
   );

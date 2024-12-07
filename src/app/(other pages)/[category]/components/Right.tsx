@@ -31,12 +31,12 @@ function Right({ category }: { category: string }) {
   };
 
   return (
-    <div style={{ position: "relative", padding: "0 20px" }}>
+    <div >
       {/* Page name label */}
       <div
         style={{
           position: "absolute",
-          top: "202px",
+          top: "402px",
           left: "528px",
           fontFamily: "Roboto, sans-serif",
           fontSize: "56px",
@@ -54,7 +54,7 @@ function Right({ category }: { category: string }) {
       <div
         style={{
           position: "absolute",
-          top: "269px",
+          top: "469px",
           left: "528px",
           width: "800px",
           borderTop: "1px solid #65707B",
@@ -66,7 +66,7 @@ function Right({ category }: { category: string }) {
       <div
         style={{
           position: "absolute",
-          top: "300px",
+          top: "500px",
           left: "528px",
           fontFamily: "Roboto",
           fontSize: "18px",
@@ -81,7 +81,7 @@ function Right({ category }: { category: string }) {
       <div
         style={{
           position: "absolute",
-          top: "300px",
+          top: "500px",
           left: "620px",
           display: "flex",
           gap: "15px",
@@ -126,12 +126,12 @@ function Right({ category }: { category: string }) {
       <div
         style={{
           position: "absolute",
-          top: "376px",
+          top: "576px",
           left: "528px",
           display: "grid",
           gridTemplateColumns: `repeat(${view}, 1fr)`, // Dynamically set the columns based on the view state
           gap: "80px", // Adjust the gap 
-          maxHeight: "calc(100vh - 600px)", // Ensure the items section is scrollable
+          maxHeight: "calc(200vh - 600px)", // Ensure the items section is scrollable
           overflowY: "auto", // Add vertical scroll bar
         }}
       >

@@ -79,7 +79,7 @@ export default function HomePage() {
         height={485}
         imageSrc="/award_category.png"
         labelText=" SHOP NOW"
-        navigateTo="/[category]" // Add the route for the award category
+        navigateTo="/awards-plaques" // Add the route for the award category
       />
 
       {/* Category: Medals */}
@@ -89,7 +89,7 @@ export default function HomePage() {
         height={485}
         imageSrc="/medal_category.png"
         labelText=" SHOP NOW"
-        navigateTo="/[category]" // Add the route for the award category
+        navigateTo="/medals" // Add the route for the award category
       />
 
       {/* Category: Badges */}
@@ -99,7 +99,7 @@ export default function HomePage() {
         height={485}
         imageSrc="/badge_category.png"
         labelText=" SHOP NOW"
-        navigateTo="/[category]" // Add the route for the award category
+        navigateTo="/badges" // Add the route for the award category
       />
 
       {/* Category: Key Tags */}
@@ -109,7 +109,7 @@ export default function HomePage() {
         height={485}
         imageSrc="/keytag_category.png"
         labelText=" SHOP NOW"
-        navigateTo="/[category]" // Add the route for the award category
+        navigateTo="/key-tags" // Add the route for the award category
       />
 
       {/* Category: Name Boards */}
@@ -119,7 +119,7 @@ export default function HomePage() {
         height={485}
         imageSrc="/nameboard_category.png"
         labelText=" SHOP NOW"
-        navigateTo="/[category]" // Add the route for the award category
+        navigateTo="/name-boards" // Add the route for the award category
       />
 
       {/* Category: Ties */}
@@ -129,7 +129,7 @@ export default function HomePage() {
         height={485}
         imageSrc="/tie_category.png"
         labelText=" SHOP NOW"
-        navigateTo="/[category]" // Add the route for the award category
+        navigateTo="/ties" // Add the route for the award category
       />
 
       {/* Category: Opening Plaque */}
@@ -139,7 +139,7 @@ export default function HomePage() {
         height={485}
         imageSrc="/opening_plaque_category.png"
         labelText=" SHOP NOW"
-        navigateTo="/[category]" // Add the route for the award category
+        navigateTo="/opening-plaques" // Add the route for the award category
       />
 
       {/* Category: Officer sash waist belt */}
@@ -149,7 +149,7 @@ export default function HomePage() {
         height={485}
         imageSrc="/sash_category.png"
         labelText=" SHOP NOW"
-        navigateTo="/[category]" // Add the route for the award category
+        navigateTo="/sash-waist-belts" // Add the route for the award category
       />
     </div>
   );

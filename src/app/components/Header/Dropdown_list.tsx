@@ -8,15 +8,15 @@ function Dropdown_list() {
 
   // List of categories
   const categories = [
-    { name: 'All Categories', link: '/all-categories' },
-    { name: 'Awards & Plaques', link: '/awards-plaque' },
+    { name: 'All Categories', link: '/all-categories/all-categories' },
+    { name: 'Awards & Plaques', link: '/awards-plaques' },
     { name: 'Medals', link: '/medals' },
     { name: 'Badges', link: '/badges' },
     { name: 'Key Tags', link: '/key-tags' },
     { name: 'Name Boards', link: '/name-boards' },
     { name: 'Ties', link: '/ties' },
     { name: 'Opening Plaques', link: '/opening-plaques' },
-    { name: 'Officer Sash Waist Belt', link: '/officer-sash-waist-belt' },
+    { name: 'Officer Sash Waist Belt', link: '/sash-waist-belts' },
   ];
 
   return (

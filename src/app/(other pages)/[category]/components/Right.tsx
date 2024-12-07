@@ -4,8 +4,6 @@ import React, { useState, useEffect } from "react";
 import { itemsData } from "../data/itemsData"; // Import itemsData from the created file
 import Link from "next/link";
 
-
-
 function Right({ category }: { category: string }) {
   const [view, setView] = useState<number>(1); // Default view: 1 column (list view)
   const [filteredItems, setFilteredItems] = useState<any[]>([]);
@@ -13,8 +11,11 @@ function Right({ category }: { category: string }) {
   const pageName = category ? category.toUpperCase() : "ALL CATEGORIES";
 
   useEffect(() => {
-    // Filter items based on category and subcategory
-    if (category) {
+    // Check if category is "All Categories", if so show all items
+    if (category && category.toLowerCase() === "all categories") {
+      setFilteredItems(itemsData); // Show all items when "All Categories"
+    } else if (category) {
+      // Otherwise filter by category or subcategory
       setFilteredItems(
         itemsData.filter(
           (item) =>
@@ -22,8 +23,6 @@ function Right({ category }: { category: string }) {
             (item.subCategory && item.subCategory.toLowerCase() === category.toLowerCase())
         )
       );
-    } else {
-      setFilteredItems(itemsData); // Show all items when no category is selected
     }
   }, [category]);
 
@@ -97,7 +96,6 @@ function Right({ category }: { category: string }) {
             className="drop-shadow-md object-contain"
             onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.2)')} // Zoom in on hover
             onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')} // Zoom out when hover ends
-
           />
         </div>
         <div onClick={() => changeView(2)} style={{ cursor: "pointer" }}>
@@ -168,8 +166,6 @@ function Right({ category }: { category: string }) {
                   paddingLeft: "5px",
                 }}
               >
-
-
                 {/* Item Name */}
                 <div
                   style={{
@@ -273,7 +269,7 @@ function Right({ category }: { category: string }) {
                     textAlign: "center",
                     color: "black",
                     marginTop: "5px",
-                    marginBottom: view === 2 ? "20px" : "0px",
+                    marginBottom: view === 2 ? "20px" : "5px",
                   }}
                 >
                   Rs. {item.price}

@@ -45,14 +45,14 @@ function Categories() {
             listStyleType: 'circle', // Rounded bullet points
           }}
         >
-          <li><Link href="/awards-plaque"><span className="category-link">Awards & Plaques</span></Link></li>
+          <li><Link href="/awards-plaques"><span className="category-link">Awards & Plaques</span></Link></li>
           <li><Link href="/medals"><span className="category-link">Medals</span></Link></li>
           <li><Link href="/badges"><span className="category-link">Badges</span></Link></li>
           <li><Link href="/key-tags"><span className="category-link">Key Tags</span></Link></li>
           <li><Link href="/name-boards"><span className="category-link">Name Boards</span></Link></li>
           <li><Link href="/ties"><span className="category-link">Ties</span></Link></li>
           <li><Link href="/opening-plaques"><span className="category-link">Opening Plaques</span></Link></li>
-          <li><Link href="/officer-sash-waist-belt"><span className="category-link">Officer Sash Waist Belt</span></Link></li>
+          <li><Link href="/sash-waist-belts"><span className="category-link">Officer Sash Waist Belt</span></Link></li>
         </ul>
       </div>
 

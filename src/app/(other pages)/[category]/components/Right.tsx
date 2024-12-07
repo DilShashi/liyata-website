@@ -95,6 +95,9 @@ function Right({ category }: { category: string }) {
             width={30}
             height={30}
             className="drop-shadow-md object-contain"
+            onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.2)')} // Zoom in on hover
+            onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')} // Zoom out when hover ends
+
           />
         </div>
         <div onClick={() => changeView(2)} style={{ cursor: "pointer" }}>
@@ -104,6 +107,8 @@ function Right({ category }: { category: string }) {
             width={30}
             height={30}
             className="drop-shadow-md object-contain"
+            onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.2)')} // Zoom in on hover
+            onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')} // Zoom out when hover ends
           />
         </div>
         <div onClick={() => changeView(3)} style={{ cursor: "pointer" }}>
@@ -113,6 +118,8 @@ function Right({ category }: { category: string }) {
             width={30}
             height={30}
             className="drop-shadow-md object-contain"
+            onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.2)')} // Zoom in on hover
+            onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')} // Zoom out when hover ends
           />
         </div>
       </div>

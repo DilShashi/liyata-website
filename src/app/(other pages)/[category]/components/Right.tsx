@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 import { itemsData } from "../data/itemsData"; // Import itemsData from the created file
 import Link from "next/link";
 
+
+
 function Right({ category }: { category: string }) {
   const [view, setView] = useState<number>(1); // Default view: 1 column (list view)
   const [filteredItems, setFilteredItems] = useState<any[]>([]);
@@ -16,9 +18,8 @@ function Right({ category }: { category: string }) {
       setFilteredItems(
         itemsData.filter(
           (item) =>
-            item.category.toLowerCase() === category.toLowerCase() ||
-            (item.category.toLowerCase() === "awards & plaques" &&
-              item.subCategory.toLowerCase() === category.toLowerCase())
+            (item.category.toLowerCase() === category.toLowerCase()) || 
+            (item.subCategory && item.subCategory.toLowerCase() === category.toLowerCase())
         )
       );
     } else {

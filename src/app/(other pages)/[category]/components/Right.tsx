@@ -161,7 +161,7 @@ function Right({ category }: { category: string }) {
               gap: view === 1 ? "20px" : "0px",
             }}
           >
-            <Link href="/item">
+            <Link href={`/item-details/${item.id}`} passHref>
               {/* Item Image */}
               <img
                 src={item.mainImage}
@@ -171,9 +171,9 @@ function Right({ category }: { category: string }) {
                   height: view === 1 ? "350px" : view === 2 ? "350px" : "211px",
                  objectFit: "fill",
                   borderRadius: "8px",
+                  cursor: "pointer", // Make the image look clickable
                 }}
               />
-            
             </Link>  
 
             {view === 1 && (

@@ -7,6 +7,7 @@ export const itemsData = [
       subImages: [
         "/Awards/1_sub_1.jpg", // Path to sub image 1
         "/Awards/1_sub_2.jpg", // Path to sub image 2
+        "/Awards/1_sub_3.jpg", // Path to sub image 3
       ],
       category: "Awards & Plaques", // Main category
       subCategory: "Sports", // Sub category
@@ -207,7 +208,7 @@ export const itemsData = [
       price: 650, // In Rs.
       mainImage: "/Medals/2_main.jpg", // Path to the main image
       subImages: [
-        "/Medals/2_sub.jpg", // Path to sub image 1
+        "/Medals/2_sub.png", // Path to sub image 1
       ],
       category: "Medals", // Main category
       purpose: "A prestigious medal specially crafted for honoring outstanding achievements, perfect for various events and competitions.",
@@ -220,7 +221,7 @@ export const itemsData = [
       price: 650, // In Rs.
       mainImage: "/Medals/3_main.jpg", // Path to the main image
       subImages: [
-        "/Medals/2_sub.jpg", // Path to sub image 1
+        "/Medals/2_sub.png", // Path to sub image 1
       ],
       category: "Medals", // Main category
       purpose: "A prestigious medal specially crafted for honoring outstanding achievements, perfect for various events and competitions.",
@@ -233,7 +234,7 @@ export const itemsData = [
       price: 650, // In Rs.
       mainImage: "/Medals/4_main.jpg", // Path to the main image
       subImages: [
-        "/Medals/2_sub.jpg", // Path to sub image 1
+        "/Medals/2_sub.png", // Path to sub image 1
       ],
       category: "Medals", // Main category
       purpose: "A prestigious medal specially crafted for honoring outstanding achievements, perfect for various events and competitions.",
@@ -256,7 +257,7 @@ export const itemsData = [
         price: 400, // In Rs.
         mainImage: "/Ties/1_main.png", // Path to the main image
         subImages: [
-          "/Ties/1_sub.jpg", // Path to sub image 1
+          "/Ties/1_sub.png", // Path to sub image 1
         ],
         category: "Ties", // Main category
         purpose: "A high-quality school tie, specially designed to represent school pride, perfect for formal occasions and honoring achievements.",
@@ -269,7 +270,7 @@ export const itemsData = [
           price: 400, // In Rs.
           mainImage: "/Ties/2_main.png", // Path to the main image
           subImages: [
-            "/Ties/2_sub.jpg", // Path to sub image 1
+            "/Ties/2_sub.png", // Path to sub image 1
           ],
           category: "Ties", // Main category
           purpose: "A high-quality school tie, specially designed to represent school pride, perfect for formal occasions and honoring achievements.",

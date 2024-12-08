@@ -1,6 +1,7 @@
 import React from 'react'
 import Categories from './Categories'
 import Reset from './Reset'
+import Price from './Price'
 
 function Left() {
   return (
@@ -10,7 +11,9 @@ function Left() {
       <div>
         <Reset /> 
       </div>
-    
+      <div>
+         <Price />
+      </div>
     </div>
     
   )

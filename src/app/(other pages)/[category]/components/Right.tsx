@@ -5,7 +5,7 @@ import { itemsData } from "../data/itemsData"; // Import itemsData from the crea
 import PriceRange from "../components/Price"; // Import PriceRange component
 
 function Right({ category }: { category: string }) {
-  const [view, setView] = useState<number>(1); // Default view: 1 column (list view)
+  const [view, setView] = useState<number>(2); // Default view: 1 column (list view)
   const [filteredItems, setFilteredItems] = useState<any[]>([]);
   const [minPrice, setMinPrice] = useState<number | null>(null); // Min price state
   const [maxPrice, setMaxPrice] = useState<number | null>(null); // Max price state
@@ -147,7 +147,7 @@ function Right({ category }: { category: string }) {
           gridTemplateColumns: `repeat(${view}, 1fr)`, // Dynamically set the columns based on the view state
           gap: "80px", // Adjust the gap 
           maxHeight: "calc(200vh - 600px)", // Ensure the items section is scrollable
-          overflowY: "auto", // Add vertical scroll bar
+          overflowY: "scroll", // Add vertical scroll bar
         }}
       >
         {filteredItems.map((item) => (

@@ -2,6 +2,7 @@ import React from 'react';
 import Bg_category from './components/Background';
 import Left from './components/Left';
 import Right from './components/Right';
+import Recent from './components/Recent';
 
 interface PageProps {
   params: {
@@ -52,10 +53,15 @@ function Page({ params }: PageProps) {
         <Bg_category />
       </div>
 
+      {/*Left side navigation bar */}
       <Left />
 
       {/* Pass the dynamically assigned categoryTitle to Right */}
       <Right category={categoryTitle} />
+
+      {/*Recently viewed items */}
+      <Recent />
+
     </div>
   );
 }

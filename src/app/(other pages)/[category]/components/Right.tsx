@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { itemsData } from "../data/itemsData"; // Import itemsData from the created file
 import PriceRange from "../components/Price"; // Import PriceRange component
+import Link from "next/link";
 
 function Right({ category }: { category: string }) {
   const [view, setView] = useState<number>(2); // Default view: 1 column (list view)
@@ -160,17 +161,20 @@ function Right({ category }: { category: string }) {
               gap: view === 1 ? "20px" : "0px",
             }}
           >
-            {/* Item Image */}
-            <img
-              src={item.mainImage}
-              alt={item.name}
-              style={{
-                width: view === 1 ? "350px" : view === 2 ? "350px" : "211px",
-                height: view === 1 ? "350px" : view === 2 ? "350px" : "211px",
-                objectFit: "fill",
-                borderRadius: "8px",
-              }}
-            />
+            <Link href="/item">
+              {/* Item Image */}
+              <img
+                src={item.mainImage}
+                alt={item.name}
+                style={{
+                  width: view === 1 ? "350px" : view === 2 ? "350px" : "211px",
+                  height: view === 1 ? "350px" : view === 2 ? "350px" : "211px",
+                 objectFit: "fill",
+                  borderRadius: "8px",
+                }}
+              />
+            
+            </Link>  
 
             {view === 1 && (
               <div

@@ -7,7 +7,7 @@ function Recent() {
        <div
           style={{
             position: "absolute",
-            top: "3000px",
+            top: "2900px",
             left: "528px",
             fontFamily: "Roboto, sans-serif",
             fontSize: "56px",
@@ -25,7 +25,7 @@ function Recent() {
         <div
           style={{
             position: "absolute",
-            top: "3075px",
+            top: "2975px",
             left: "528px",
             width: "800px",
             borderTop: "1px solid #65707B",

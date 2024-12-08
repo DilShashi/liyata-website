@@ -8,6 +8,7 @@ export const itemsData = [
         "/Awards/1_sub_1.jpg", // Path to sub image 1
         "/Awards/1_sub_2.jpg", // Path to sub image 2
         "/Awards/1_sub_3.jpg", // Path to sub image 3
+        "/Awards/1_sub_4.jpg", // Path to sub image 4
       ],
       category: "Awards & Plaques", // Main category
       subCategory: "Sports", // Sub category

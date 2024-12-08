@@ -2,6 +2,7 @@ import React from 'react';
 import Bg_category from '../components/Background';
 import Left from '../components/Left';
 import Right from '../components/Right';
+import Recent from '../components/Recent';
 
 function AllCategoriesPage() {
   return (
@@ -15,6 +16,10 @@ function AllCategoriesPage() {
 
       {/* Right component with no filtering applied */}
       <Right category="All Categories" />
+
+      
+      {/*Recently viewed items */}
+      <Recent />
     </div>
   );
 }

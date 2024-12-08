@@ -147,7 +147,7 @@ function Right({ category }: { category: string }) {
           display: "grid",
           gridTemplateColumns: `repeat(${view}, 1fr)`, // Dynamically set the columns based on the view state
           gap: "80px", // Adjust the gap 
-          maxHeight: "calc(200vh - 600px)", // Ensure the items section is scrollable
+          maxHeight: "2100px", // Ensure the items section is scrollable
           overflowY: "scroll", // Add vertical scroll bar
         }}
       >
@@ -172,9 +172,16 @@ function Right({ category }: { category: string }) {
                  objectFit: "fill",
                   borderRadius: "8px",
                   cursor: "pointer", // Make the image look clickable
+                  transition: 'filter 0.3s ease', // Smooth transition for hover effect
                 }}
+                className="image-hover"
               />
             </Link>  
+            <style jsx>{`
+             .image-hover:hover {
+               filter: brightness(0.7); /* Reduces brightness on hover */
+              }
+            `}</style>
 
             {view === 1 && (
               <div

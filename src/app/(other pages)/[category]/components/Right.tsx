@@ -2,36 +2,48 @@
 
 import React, { useState, useEffect } from "react";
 import { itemsData } from "../data/itemsData"; // Import itemsData from the created file
-import Link from "next/link";
+import PriceRange from "../components/Price"; // Import PriceRange component
 
 function Right({ category }: { category: string }) {
   const [view, setView] = useState<number>(1); // Default view: 1 column (list view)
   const [filteredItems, setFilteredItems] = useState<any[]>([]);
+  const [minPrice, setMinPrice] = useState<number | null>(null); // Min price state
+  const [maxPrice, setMaxPrice] = useState<number | null>(null); // Max price state
 
   const pageName = category ? category.toUpperCase() : "ALL CATEGORIES";
 
   useEffect(() => {
     // Check if category is "All Categories", if so show all items
-    if (category && category.toLowerCase() === "all categories") {
-      setFilteredItems(itemsData); // Show all items when "All Categories"
-    } else if (category) {
-      // Otherwise filter by category or subcategory
-      setFilteredItems(
-        itemsData.filter(
+    let filtered = category && category.toLowerCase() !== "all categories"
+      ? itemsData.filter(
           (item) =>
-            (item.category.toLowerCase() === category.toLowerCase()) || 
+            (item.category.toLowerCase() === category.toLowerCase()) ||
             (item.subCategory && item.subCategory.toLowerCase() === category.toLowerCase())
         )
+      : itemsData; // Show all items when "All Categories"
+
+    // Apply price range filter if defined
+    if (minPrice !== null && maxPrice !== null) {
+      filtered = filtered.filter(
+        (item) => item.price >= minPrice && item.price <= maxPrice
       );
     }
-  }, [category]);
+
+    setFilteredItems(filtered); // Update filtered items
+  }, [category, minPrice, maxPrice]); // Depend on category, minPrice, maxPrice
 
   const changeView = (newView: number) => {
     setView(newView);
   };
 
+  // Handle price range change
+  const handlePriceRangeChange = (min: number | null, max: number | null) => {
+    setMinPrice(min);
+    setMaxPrice(max);
+  };
+
   return (
-    <div >
+    <div>
       {/* Page name label */}
       <div
         style={{
@@ -121,6 +133,9 @@ function Right({ category }: { category: string }) {
           />
         </div>
       </div>
+
+
+      <PriceRange onPriceRangeChange={handlePriceRangeChange} />
 
       {/* Items section */}
       <div

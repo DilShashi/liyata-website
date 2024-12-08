@@ -2,19 +2,19 @@
 
 import React, { useState } from 'react';
 
-function Price() {
+function Price({ onPriceRangeChange }: { onPriceRangeChange: (min: number | null, max: number | null) => void }) {
   const [minPrice, setMinPrice] = useState('');
   const [maxPrice, setMaxPrice] = useState('');
 
   const handleApply = () => {
-    // Export the min and max price range for filtering in Right.tsx
-    console.log('Price Range:', { min: minPrice, max: maxPrice });
+    // Convert min and max price to numbers and pass them to the parent (Right.tsx)
+    const min = minPrice ? parseFloat(minPrice) : null;
+    const max = maxPrice ? parseFloat(maxPrice) : null;
+    onPriceRangeChange(min, max);
 
     // Clear input values
     setMinPrice('');
     setMaxPrice('');
-
-    // Add logic to pass this range to the filtering functionality in Right.tsx
   };
 
   return (
@@ -57,9 +57,10 @@ function Price() {
         }}
       >
         {/* Min Price Input */}
+
         <div style={{ position: 'relative' }}>
-          <input
-            type="text"
+         <input
+            type="number"
             placeholder="Min"
             value={minPrice}
             onChange={(e) => setMinPrice(e.target.value)}
@@ -91,7 +92,7 @@ function Price() {
         {/* Max Price Input */}
         <div style={{ position: 'relative' }}>
           <input
-            type="text"
+            type="number"
             placeholder="Max"
             value={maxPrice}
             onChange={(e) => setMaxPrice(e.target.value)}
@@ -138,6 +139,8 @@ function Price() {
           APPLY
         </button>
       </div>
+      <div>
+    </div>
     </div>
   );
 }

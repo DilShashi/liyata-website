@@ -103,6 +103,7 @@ const Images = ({ id }: { id: number }) => {
                   style={{ objectFit: 'cover' }} // Ensure images are cropped to fit within the 200x200 box
                 />
               </div>
+              
             ))}
           </div>
         </div>

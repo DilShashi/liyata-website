@@ -12,7 +12,7 @@ function Left() {
         <Reset /> 
       </div>
       <div>
-         <Price />
+        <Price />
       </div>
     </div>
     

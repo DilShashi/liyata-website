@@ -4,6 +4,7 @@ import React from 'react';
 import { useParams } from 'next/navigation'; // Correct import for useParams in Next.js 13
 import Images from '../components/Images';
 import Bg_item from '../components/Background';
+import Details from '../components/Details';
 
 const page = () => {
   const params = useParams(); // Using the useParams hook to get params
@@ -24,6 +25,12 @@ const page = () => {
       <div>
         <Images id={parseInt(id as string)} /> {/* Pass the id to the Images component */}
       </div>
+
+      {/*Details section */}
+      <div>
+        <Details id={parseInt(id as string)}/>
+      </div>
+
     </div>
   );
 };

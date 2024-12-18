@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation'; // Correct import for useParams in 
 import Images from '../components/Images';
 import Bg_item from '../components/Background';
 import Details from '../components/Details';
+import CartButton from '../components/CartButton';
 
 const page = () => {
   const params = useParams(); // Using the useParams hook to get params

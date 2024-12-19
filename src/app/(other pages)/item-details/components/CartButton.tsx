@@ -76,7 +76,7 @@ const CartButton: React.FC<CartButtonProps> = ({ itemId, onAddToCart }) => {
             style={{
               width: '1008px',
               height: '701px',
-              position: 'fixed',
+              position: 'absolute',
               top: '540px',
               left: '216px',
               background: 'linear-gradient(white 0%, #99C2FF 100%)',

@@ -3,6 +3,7 @@ import { itemsData } from '../../[category]/data/itemsData';
 import CartButton from './CartButton';
 import RequestButton from './RequestButton';
 import Description from './Description';
+import RelatedProducts from './RelatedProducts';
 
 const Details = ({ id }: { id: number }) => {
   // Find the item based on the provided id
@@ -241,6 +242,7 @@ const Details = ({ id }: { id: number }) => {
       />
       <div>
         <Description itemId={item.id} />  
+        <RelatedProducts itemId={item.id} />  
       </div>
        
     </div>

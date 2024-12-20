@@ -15,6 +15,7 @@ export const itemsData = [
       purpose: "A large trophy specially designed for football tournaments, perfect for honoring achievements.",
       size: "Stands tall at 3 feet, making it an impressive centerpiece for any event.",
       materials: "Plaque: Crafted from high-quality wood, featuring an engraved plate with personalized information.",
+      other: "Size: Stands tall at 3 feet, making it an impressive centerpiece for any event."
     },
 
     {
@@ -27,6 +28,7 @@ export const itemsData = [
       purpose: "A large trophy specially designed for football tournaments, perfect for honoring achievements.",
       size: "Stands tall at 3 feet, making it an impressive centerpiece for any event.",
       materials: "Plaque: Crafted from high-quality wood, featuring an engraved plate with personalized information.",
+      other: ""
     },
 
     {
@@ -39,6 +41,7 @@ export const itemsData = [
       purpose: "A large trophy specially designed for football tournaments, perfect for honoring achievements.",
       size: "Stands tall at 3 feet, making it an impressive centerpiece for any event.",
       materials: "Plaque: Crafted from high-quality wood, featuring an engraved plate with personalized information.",
+      other: ""
     },
 
     {
@@ -51,6 +54,7 @@ export const itemsData = [
       purpose: "A large trophy specially designed for football tournaments, perfect for honoring achievements.",
       size: "Stands tall at 3 feet, making it an impressive centerpiece for any event.",
       materials: "Plaque: Crafted from high-quality wood, featuring an engraved plate with personalized information.",
+      other: ""
     },
 
     {
@@ -63,6 +67,7 @@ export const itemsData = [
       purpose: "A large trophy specially designed for football tournaments, perfect for honoring achievements.",
       size: "Stands tall at 3 feet, making it an impressive centerpiece for any event.",
       materials: "Plaque: Crafted from high-quality wood, featuring an engraved plate with personalized information.",
+      other: ""
     },
 
     {
@@ -75,6 +80,7 @@ export const itemsData = [
       purpose: "A large trophy specially designed for football tournaments, perfect for honoring achievements.",
       size: "Stands tall at 3 feet, making it an impressive centerpiece for any event.",
       materials: "Plaque: Crafted from high-quality wood, featuring an engraved plate with personalized information.",
+      other: ""
     },
   
     {

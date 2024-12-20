@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { itemsData } from '../../[category]/data/itemsData';
 import CartButton from './CartButton';
 import RequestButton from './RequestButton';
+import Description from './Description';
 
 const Details = ({ id }: { id: number }) => {
   // Find the item based on the provided id
@@ -238,6 +239,10 @@ const Details = ({ id }: { id: number }) => {
         itemPrice={item.price}
         userDescription={customizationDescription}
       />
+      <div>
+        <Description itemId={item.id} />  
+      </div>
+       
     </div>
   );
 };
